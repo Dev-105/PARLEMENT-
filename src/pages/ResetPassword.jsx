@@ -109,7 +109,7 @@ const ResetPassword = () => {
         password,
         password_confirmation: passwordConfirmation
       }, {
-        baseURL: 'http://localhost:8000',
+        baseURL: import.meta.env.VITE_API_URL,
         headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json'
